@@ -1,30 +1,30 @@
-# Madrid house price predictor
+# Review quality classification
 ![alt text](https://github.com/KevsDe/madrid_house_price/blob/main/static/madrid.jpg?raw=true)
 ## About the project:
-Are you trying to figure out your dream house price in Madrid Spain?  
-It is complicated to look to multiple sites to find out an approximate house price, with this model, you can provide the features such as neighborhood, bedroom number, etc, and get an approximate price of a house in Madrid with that characteristic.
+61% of the reviews published on Amazon are likely to be fake, the objective of this project is analyse identify low-quality reviews based in contextual and behavioural features.
 
 **This project was made for learning and fun purposes and is not a production service**
 
 ## About the data:
-I scraped the data from a real estate website in October 2022,  the data has not been updated since then, and the last update is relevant because the house  price fluctuation. 
+The data set is available on Kaggle: 
+https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews
 
 ## About the model:
- - Model trained with 11404 observations
- - Last Update 2022/11/05
- - The model used is Random Forest
- - Available parameters (all mandatory):  House type, House type 2, Rooms, m2, Elevator, Garage, District & Neighborhood.
+ - Model trained with 50630 observations
+ - Last Update 2022/12/22
+ - The model used is SVC
+ - Available parameters: Review text
  
 ## How to run the model
  - Download the files
+ - Execute the command pip install -r requirements.txt
  - Run train.py
 
 **Option 1**
- - Build Docker container: `docker build -t madrid_house_price .`
- - Run Docker container: `docker run -it -p 9696:9696 madrid_house_price:latest`
+ - Build Docker container: `docker build -t review_bandit .`
+ - Run Docker container: `docker run -it -p 9696:9696 review_bandit:latest`
  
-**Option 2**
+**Model in action**
 
-The model is deployed in pythonanywhere: https://kevmp.pythonanywhere.com/
 
 **From Madrid (L)**
