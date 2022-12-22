@@ -1,5 +1,5 @@
 # Review quality classification
-![alt text](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/dualbandit.png?raw=true)
+![](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/rev_ban.gif.gif?raw=true)
 ## About the project:
 61% of the reviews published on Amazon are likely to be fake, the objective of this project is analyse identify low-quality reviews based in contextual and behavioural features.
 
@@ -27,7 +27,7 @@ https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews
  - Build Docker container: `docker build -t review_bandit .`
  - Run Docker container: `docker run -it -p 9696:9696 review_bandit:latest`
  
-**Model in action**
-![](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/rev_ban.gif.gif?raw=true)
+![alt text](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/dualbandit.png?raw=true)
+
 
 **From Madrid (L)**
