@@ -1,5 +1,5 @@
 # Review quality classification
-![alt text](https://github.com/KevsDe/madrid_house_price/blob/main/static/madrid.jpg?raw=true)
+![alt text](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/dualbandit.png?raw=true)
 ## About the project:
 61% of the reviews published on Amazon are likely to be fake, the objective of this project is analyse identify low-quality reviews based in contextual and behavioural features.
 
@@ -17,14 +17,17 @@ https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews
  
 ## How to run the model
  - Download the files
- - Execute the command pip install -r requirements.txt
+ - Download the dataset https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews
+ - Run the command pip install -r requirements.txt
+ - Run the notebook "amazon_reviewd_project.ipynb"
  - Run train.py
+ - Run predict.py
 
-**Option 1**
+**Option Docker**
  - Build Docker container: `docker build -t review_bandit .`
  - Run Docker container: `docker run -it -p 9696:9696 review_bandit:latest`
  
 **Model in action**
-
+![](https://github.com/KevsDe/amz_reviewd_classificator/blob/main/static/rev_ban.gif.gif?raw=true)
 
 **From Madrid (L)**
